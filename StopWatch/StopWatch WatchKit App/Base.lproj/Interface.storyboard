@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15705" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15501"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="StopWatch_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="1" height="36" alignment="center" text="00:00:00" textAlignment="center" id="0cp-eG-q88"/>
+                        <button width="1" alignment="left" title="Label" id="Tpp-fg-IfS">
+                            <fontDescription key="font" type="system" weight="medium" pointSize="16"/>
+                            <connections>
+                                <action selector="didPressStartBtn" destination="AgC-eL-Hgc" id="QK9-i4-TCI"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Label" id="k9U-Px-W8M">
+                            <fontDescription key="font" type="system" weight="medium" pointSize="16"/>
+                            <connections>
+                                <action selector="didPressPauseBtn" destination="AgC-eL-Hgc" id="bXU-H3-zbW"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Label" id="ahy-Jj-I0N">
+                            <fontDescription key="font" type="system" weight="medium" pointSize="16"/>
+                            <connections>
+                                <action selector="didPressResetBtn" destination="AgC-eL-Hgc" id="Q3C-zZ-6OV"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="pauseBtnOutlet" destination="k9U-Px-W8M" id="bKg-RT-mYf"/>
+                        <outlet property="resetBtnOutlet" destination="ahy-Jj-I0N" id="B0h-K4-C9c"/>
+                        <outlet property="startBtnOutlet" destination="Tpp-fg-IfS" id="2fe-uM-XMt"/>
+                        <outlet property="timeDisplayLabel" destination="0cp-eG-q88" id="g3g-Wc-aGt"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="40" y="31"/>
+        </scene>
+    </scenes>
+</document>
